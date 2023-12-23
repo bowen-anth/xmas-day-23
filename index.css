@@ -10,3 +10,49 @@ html, body {
     --toggle-border: #232428;
     --toggle-bg: #fff;
 }
+
+#toggle {
+    display: visible;
+}
+
+.toggle-wrap {
+    margin: 10em auto;
+    text-align: center;
+}
+
+.toggle-switch {
+    margin: 5px;
+    background-color: var(--toggle-switch-bg);
+    width: 2em;
+    height: 2em;
+    border-radius: 50%;
+}
+
+label {
+    width: 6em;
+    height: 3em;
+    border-radius: 25px;
+    border: 3px solid var(--toggle-switch-bg);
+    background-color: #fff;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+
+#toggle:checked .toggle-switch {
+    margin-left: auto;
+}
+
+/* on toggle switch moves one side to other */
+/* cursor: pointer */
+
+/* starting with a checkbox
+
+if u hide checkbox u can still toggle back and forth between input:checked 
+and input:unchecked by clicking label
+
+use a sibling selector to style the .toggle-switch class when input is checked or unchecked
+
+transition for toggle back and forth */
