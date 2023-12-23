@@ -12,7 +12,7 @@ html, body {
 }
 
 #toggle {
-    display: visible;
+    display: none;
 }
 
 .toggle-wrap {
@@ -41,7 +41,7 @@ label {
     align-items: center;
 }
 
-#toggle:checked .toggle-switch {
+#toggle:checked + .toggle-switch {
     margin-left: auto;
 }
 
